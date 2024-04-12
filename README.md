@@ -65,10 +65,22 @@ class ParteSuperior extends Prenda{
 
 }
 
+enum tipoPrendaSuperior {
+remera;
+musculosa;
+etc;
+}
+
 class ParteInferior extends Prenda{
 
     tipoPrendaInferior tipo;
 
+}
+
+enum tipoPrendaInferior {
+pantalon;
+bermuda;
+etc;
 }
 
 class Calzado extends Prenda{
@@ -77,10 +89,22 @@ class Calzado extends Prenda{
 
 }
 
+enum tipoCalzado {
+gorra;
+piluso;
+etc;
+}
+
 class Accesorio extends Prenda{
 
     tipoAccesorio tipo;
 
+}
+
+enum tipoAccesorio {
+bufanda;
+anteojos;
+etc;
 }
 
 # Prosa
