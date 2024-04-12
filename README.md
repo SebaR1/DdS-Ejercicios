@@ -4,108 +4,108 @@
 
 # PseudoCodigo
 
-class Atuendo{
+    class Atuendo{
 
-    PrendaSuperior prendaSuperior;
-    PrendaInferior prendaInferior;
-    Calzado calzado;
-    Accesorio accesorio = NULL;
+        PrendaSuperior prendaSuperior;
+        PrendaInferior prendaInferior;
+        Calzado calzado;
+        Accesorio accesorio = NULL;
 
-}
-
-class Usuario{
-
-    Prenda prendasValidas[] = []
-    Atuendo atuendos[] = []
-
-    method cargarPrendaSuperior(ParteSuperior){
-        prendasValidas.add(ParteSuperior);
-    }
-    method cargarPrendaInferior(PrendaInferior){
-        prendasValidas.add(PrendaInferior);
-    }
-    method cargarCalzado(Calzado){
-        prendasValidas.add(Calzado);
-    }
-    method cargarAccesorio(Accesorio){
-        prendasValidas.add(Accesorio);
     }
 
-    method armarAtuendo(Atuendo){
-        atuendos.add(atuendo)
+    class Usuario{
+
+        Prenda prendasValidas[] = []
+        Atuendo atuendos[] = []
+
+        method cargarPrendaSuperior(ParteSuperior){
+            prendasValidas.add(ParteSuperior);
+        }
+        method cargarPrendaInferior(PrendaInferior){
+            prendasValidas.add(PrendaInferior);
+        }
+        method cargarCalzado(Calzado){
+            prendasValidas.add(Calzado);
+        }
+        method cargarAccesorio(Accesorio){
+            prendasValidas.add(Accesorio);
+        }
+
+        method armarAtuendo(Atuendo){
+            atuendos.add(atuendo)
+        }
+
     }
 
-}
+    class Prenda{
 
-class Prenda{
+        material materialPrenda;
+        color colorPrincipal;
+        color colorSecundario = no_especifado:
 
-    material materialPrenda;
-    color colorPrincipal;
-    color colorSecundario = no_especifado:
+    }
 
-}
+    enum color {
+    rojo;
+    azul;
+    verde;
+    no_especificado;
+    etc;
+    }
 
-enum color {
-rojo;
-azul;
-verde;
-no_especificado;
-etc;
-}
+    enum material {
+    lana;
+    algodon;
+    etc;
+    }
 
-enum material {
-lana;
-algodon;
-etc;
-}
+    class ParteSuperior extends Prenda{
 
-class ParteSuperior extends Prenda{
+        tipoPrensaSuperior tipo;
 
-    tipoPrensaSuperior tipo;
+    }
 
-}
+    enum tipoPrendaSuperior {
+    remera;
+    musculosa;
+    etc;
+    }
 
-enum tipoPrendaSuperior {
-remera;
-musculosa;
-etc;
-}
+    class ParteInferior extends Prenda{
 
-class ParteInferior extends Prenda{
+        tipoPrendaInferior tipo;
 
-    tipoPrendaInferior tipo;
+    }
 
-}
+    enum tipoPrendaInferior {
+    pantalon;
+    bermuda;
+    etc;
+    }
 
-enum tipoPrendaInferior {
-pantalon;
-bermuda;
-etc;
-}
+    class Calzado extends Prenda{
 
-class Calzado extends Prenda{
+        tipoCalzado tipo;
 
-    tipoCalzado tipo;
+    }
 
-}
+    enum tipoCalzado {
+    gorra;
+    piluso;
+    etc;
+    }
 
-enum tipoCalzado {
-gorra;
-piluso;
-etc;
-}
+    class Accesorio extends Prenda{
 
-class Accesorio extends Prenda{
+        tipoAccesorio tipo;
 
-    tipoAccesorio tipo;
+    }
 
-}
-
-enum tipoAccesorio {
-bufanda;
-anteojos;
-etc;
-}
+    enum tipoAccesorio {
+    bufanda;
+    anteojos;
+    etc;
+    }
 
 # Prosa
 
