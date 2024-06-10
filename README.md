@@ -4,57 +4,57 @@
 
 ## PseudoCodigo
 
-class Prenda
-{
+    class Prenda
+    {
 
-    tipoPrenda tipo;
-    trama trama;
-    tipoMaterial material;
-    color colorPrincipal;
-    color colorSecundario;
+        tipoPrenda tipo;
+        trama trama;
+        tipoMaterial material;
+        color colorPrincipal;
+        color colorSecundario;
 
-}
-
-class BorradorPrenda
-{
-
-    tipoPrenda tipo;
-    trama trama;
-    tipoMaterial material;
-    color colorPrincipal;
-    color colorSecundario;
-
-    contructor BorradorPrenda(tipo){
-        validarNoNull(tipo);
-        this.tipo = tipo;
-        trama = trama.LISA;
     }
 
-    void setTrama(trama){
-        validarNoNull(trama);
-        this.trama = trama;
-    }
-    void setMaterial(material){
-        validarNoNull(material);
-        this.material = material;
-    }
-    void setColorPrincipal(color){
-        validarNoNull(color);
-        this.colorPrincipal = tipo;
-    }
-    void setColorSecundario(color){
-        this.colorSecundario = tipo;
-    }
+    class BorradorPrenda
+    {
 
-    void crearPrenda(){
-        validarNoNull(trama);
-        validarNoNull(material);
-        validarNoNull(color);
+        tipoPrenda tipo;
+        trama trama;
+        tipoMaterial material;
+        color colorPrincipal;
+        color colorSecundario;
 
-        return new Prenda(tipo, material, colorPrincipal, colorSecundario, trama);
+        contructor BorradorPrenda(tipo){
+            validarNoNull(tipo);
+            this.tipo = tipo;
+            trama = trama.LISA;
+        }
+
+        void setTrama(trama){
+            validarNoNull(trama);
+            this.trama = trama;
+        }
+        void setMaterial(material){
+            validarNoNull(material);
+            this.material = material;
+        }
+        void setColorPrincipal(color){
+            validarNoNull(color);
+            this.colorPrincipal = tipo;
+        }
+        void setColorSecundario(color){
+            this.colorSecundario = tipo;
+        }
+
+        void crearPrenda(){
+            validarNoNull(trama);
+            validarNoNull(material);
+            validarNoNull(color);
+
+            return new Prenda(tipo, material, colorPrincipal, colorSecundario, trama);
+        }
+
     }
-
-}
 
 ## Prosa
 
